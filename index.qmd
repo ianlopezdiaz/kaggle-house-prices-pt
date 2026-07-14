@@ -1,0 +1,102 @@
+---
+title: "House Prices: Estudo de Caso de Regressão Completo"
+description: "Fluxo de trabalho completo de aprendizado de máquina para predição de preços de imóveis residenciais utilizando dados tabulares estruturados."
+---
+
+## Visão Geral
+
+Este projeto desenvolve um fluxo de trabalho completo de aprendizado de máquina para prever preços de imóveis residenciais utilizando o conjunto de dados **House Prices** do Kaggle.
+
+O projeto enfatiza um fluxo de trabalho de regressão reproduzível, abrangendo análise exploratória de dados, engenharia de atributos, transformações de variáveis, comparação de modelos e avaliação rigorosa por meio de validação cruzada.
+
+O objetivo final é construir um modelo preditivo capaz de estimar o preço de venda de imóveis a partir de informações estruturadas e gerar uma submissão válida para a competição do Kaggle.
+
+---
+
+## Problema
+
+Dado um conjunto de características de imóveis residenciais, o sistema deve:
+
+1. Explorar e compreender o conjunto de dados.
+2. Preparar e construir atributos preditivos relevantes.
+3. Treinar e comparar diferentes modelos de regressão.
+4. Prever o preço de venda de imóveis não observados.
+
+---
+
+## Metodologia
+
+O projeto segue um fluxo estruturado de aprendizado de máquina:
+
+* Análise Exploratória de Dados (EDA)
+* Limpeza de dados e tratamento de valores ausentes
+* Engenharia de atributos
+* Transformação logarítmica de variáveis assimétricas
+* Modelos de referência (*baselines*)
+* Regressão Linear
+* Regressão com Random Forest
+* Regressão com Gradient Boosting
+* Validação cruzada e comparação de modelos
+* Treinamento do modelo final e geração da submissão para o Kaggle
+
+---
+
+## Conjunto de Dados
+
+O projeto utiliza o conjunto de dados **House Prices: Advanced Regression Techniques** do Kaggle.
+
+O conjunto de dados contém informações detalhadas sobre imóveis residenciais da cidade de Ames, Iowa, incluindo:
+
+* Características do terreno
+* Qualidade e condição da construção
+* Características internas e externas
+* Informações sobre garagem e porão
+* Preço de venda (conjunto de treinamento)
+
+O objetivo é prever o preço de venda dos imóveis presentes no conjunto de teste.
+
+---
+
+## Estrutura do Projeto
+
+O repositório está organizado da seguinte forma:
+
+```text
+kaggle-house-prices/
+│
+├── README.md                                   # Visão geral do projeto e instruções de configuração.
+├── index.qmd                                   # Página inicial do site em Quarto.
+├── _quarto.yml                                 # Configuração do site em Quarto.
+├── environment.yml                             # Especificação do ambiente Conda.
+├── LICENSE                                     # Licença do projeto.
+│
+├── notebooks/
+│   │
+│   ├── 01_exploratory_data_analysis.ipynb      # Análise exploratória de dados (EDA).
+│   ├── 02_feature_engineering.ipynb            # Limpeza de dados e engenharia de atributos.
+│   └── 03_modeling_and_evaluation.ipynb        # Treinamento, avaliação dos modelos e submissão ao Kaggle.
+│
+├── data/
+│   │
+│   ├── raw/
+│   │   ├── data_description.txt                # Documentação do conjunto de dados fornecida pelo Kaggle.
+│   │   ├── sample_submission.csv               # Exemplo de arquivo de submissão do Kaggle.
+│   │   ├── test.csv                            # Conjunto de teste da competição.
+│   │   └── train.csv                           # Conjunto de treinamento da competição.
+│   │
+│   └── processed/
+│       ├── 01_data.parquet                     # Conjunto de dados processado gerado pelo Notebook 1.
+│       ├── 01_features.parquet                 # Metadados das variáveis gerados pelo Notebook 1.
+│       ├── 02_data.parquet                     # Conjunto de dados após a engenharia de atributos.
+│       ├── 02_features.parquet                 # Metadados atualizados das variáveis após a engenharia de atributos.
+│       └── submission.csv                      # Submissão final ao Kaggle gerada pelo Notebook 3.
+│
+└── _site/
+    └── ...                                     # Site gerado pelo Quarto.
+```
+
+---
+
+## Status
+
+Este projeto está concluído e documenta um fluxo completo de regressão supervisionada, desde a exploração dos dados brutos até a avaliação dos modelos e a geração da submissão para o Kaggle.

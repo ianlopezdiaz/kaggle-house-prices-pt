@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://ianlopezdiaz.github.io/kaggle-house-prices-pt/index.html</loc>
+    <lastmod>2026-07-14T01:41:48.821Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ianlopezdiaz.github.io/kaggle-house-prices-pt/notebooks/01_exploratory_data_analysis.html</loc>
+    <lastmod>2026-07-14T02:05:59.788Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ianlopezdiaz.github.io/kaggle-house-prices-pt/notebooks/02_feature_engineering.html</loc>
+    <lastmod>2026-07-14T02:19:07.371Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ianlopezdiaz.github.io/kaggle-house-prices-pt/notebooks/03_modeling_and_evaluation.html</loc>
+    <lastmod>2026-07-14T02:32:22.775Z</lastmod>
+  </url>
+</urlset>

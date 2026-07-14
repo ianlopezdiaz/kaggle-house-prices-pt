@@ -1,0 +1,41 @@
+project:
+  type: website
+
+website:
+  title: "House Prices: Estudo de Caso de Regressão Completo"
+  description: "Um fluxo de trabalho completo de aprendizado de máquina utilizando o conjunto de dados House Prices do Kaggle."
+  site-url: "https://ianlopezdiaz.github.io/kaggle-house-prices-pt"
+  #favicon: images/favicon.ico # opcional - remova se não houver
+  navbar:
+    left:
+      - text: "Início"
+        href: index.qmd
+      - text: Notebooks
+        menu:
+          - href: notebooks/01_exploratory_data_analysis.ipynb
+            text: "01 - Análise Exploratória de Dados (EDA)"
+          - href: notebooks/02_feature_engineering.ipynb
+            text: "02 - Engenharia de Atributos"
+          - href: notebooks/03_modeling_and_evaluation.ipynb
+            text: "03 - Modelagem e Avaliação"
+    right:
+      - text: "🇺🇸 English"
+        href: "https://ianlopezdiaz.github.io/kaggle-house-prices"
+      - text: Portfólio
+        href: https://ianlopezdiaz.github.io/portfolio
+      - icon: github
+        href: https://github.com/ianlopezdiaz/kaggle-house-prices-pt
+
+  page-footer:
+    left: "© 2026 ianlopezdiaz"
+    right: "Desenvolvido com [Quarto](https://quarto.org/)"
+
+format:
+  html:
+    theme:
+      dark: solar
+      light: minty
+    toc: true
+    toc-depth: 3
+    code-fold: show
+    highlight-style: github
