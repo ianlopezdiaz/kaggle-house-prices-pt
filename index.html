@@ -427,8 +427,12 @@ ul.task-list li input[type="checkbox"] {
 │       ├── 02_features.parquet                 # Metadados atualizados das variáveis após a engenharia de atributos.
 │       └── submission.csv                      # Submissão final ao Kaggle gerada pelo Notebook 3.
 │
-└── _site/
-    └── ...                                     # Site gerado pelo Quarto.</code></pre>
+├── scripts/
+│   └── publish.sh                              # Executa os notebooks e publica o site no GitHub Pages.
+│
+└── _site/                                      # Site gerado pelo Quarto (ignorado pelo git, não versionado).
+    └── ...</code></pre>
+<p>O site é publicado no GitHub Pages através de <code>./scripts/publish.sh</code>, que reexecuta os notebooks e roda <code>quarto publish gh-pages</code>; o próprio conteúdo gerado em <code>_site/</code> não é versionado no repositório.</p>
 <hr>
 </section>
 <section id="status" class="level2">
