@@ -89,8 +89,11 @@ kaggle-house-prices/
 │       ├── 02_features.parquet                 # Metadados atualizados das variáveis após a engenharia de atributos.
 │       └── submission.csv                      # Submissão final ao Kaggle gerada pelo Notebook 3.
 │
-└── _site/
-    └── ...                                     # Site gerado pelo Quarto.
+├── scripts/
+│   └── publish.sh                              # Executa os notebooks e publica o site no GitHub Pages.
+│
+└── _site/                                      # Site gerado pelo Quarto (ignorado pelo git, não versionado).
+    └── ...
 ```
 
 ---
@@ -121,6 +124,18 @@ ou
 ```bash
 quarto render
 ```
+
+### Publicando o site
+
+O site renderizado (`_site/`) não é versionado neste repositório; ele é publicado
+diretamente na branch `gh-pages` do GitHub. Após qualquer alteração nos notebooks
+que deva ser refletida no site publicado, execute:
+
+```bash
+./scripts/publish.sh
+```
+
+Isso reexecuta todos os notebooks e, em seguida, roda `quarto publish gh-pages`.
 
 ---
 
